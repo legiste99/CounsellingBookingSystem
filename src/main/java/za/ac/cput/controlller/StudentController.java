@@ -47,8 +47,8 @@ public class StudentController {
         return studentService.getAll();
     }
 
-    @GetMapping("/getallwitha")
-    public Set<Student> getallwitha(){
-        return studentService.getAllWithA();
-    }
+//    @GetMapping("/getallwitha")
+//    public Set<Student> getallwitha(){
+//        return studentService.getAllWithA("a");
+//    }
 }

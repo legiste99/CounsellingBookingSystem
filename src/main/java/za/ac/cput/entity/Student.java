@@ -1,9 +1,31 @@
 package za.ac.cput.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
 
+@Entity
+@Table(name="student")
 public class Student {
-    private String studentNumber, firstName, lastName, gender, studentId;
+
+    private String studentId;
+
+    @Id
+    @Column(name="student_number")
+    private String studentNumber;
+
+    @Column(name="first_name")
+    private String firstName;
+
+    @Column(name="last_name")
+    String lastName;
+
+    @Column(name="gender")
+    String gender;
+
+    @Column(name="dob")
     private Date dob;
 
     private Student(){}
