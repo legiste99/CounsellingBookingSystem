@@ -119,30 +119,6 @@ public class Booking {
             return this;
         }
 
-        public String getBookingId() {
-            return bookingId;
-        }
-
-        public String getDuration() {
-            return duration;
-        }
-
-        public String getBookingTime() {
-            return bookingTime;
-        }
-
-        public String getBookingDate() {
-            return bookingDate;
-        }
-
-        public String getBookingType() {
-            return bookingType;
-        }
-
-        public String getLocation() {
-            return location;
-        }
-
     }
 
 

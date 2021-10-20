@@ -11,9 +11,10 @@ import za.ac.cput.entity.Booking;
  */
 public class BookingFactory {
 
-    public static Booking createBooking(String bookingType, String bookingTime, String bookingDate, String location, String duration){
-        String bookingId = GenericHelper.generateId();
+    public static Booking createBooking(String bookingId, String bookingType, String bookingTime, String bookingDate, String location, String duration){
+        String userId = GenericHelper.generateId();
         Booking booking = new Booking.Builder()
+                .setUserId(userId)
                 .setBookingId(bookingId)
                 .setBookingDate(bookingDate)
                 .setBookingTime(bookingTime)
